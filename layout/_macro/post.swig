@@ -1,7 +1,7 @@
 {%- macro render(post) -%}
   <article class="post">
     <header class="post-header">
-      <h1 class="post-title">
+      <h1 class="post-title emphasized-title">
         {%- if is_home() -%}
           <a class="post-link" href="{{ url_for(post.path) }}">{{ post.title }}</a>
         {%- else -%}
@@ -63,6 +63,9 @@
     {%- if not is_home() -%}
       {#- Post Copyright -#}
       {%- include "../_partial/_post/copyright.swig" -%}
+
+      {#- Custom footer -#}
+      {%- include "../_partial/_post/custom-footer.swig" -%}
 
       {#- Reward -#}
       {%- include "../_partial/_post/reward.swig" -%}

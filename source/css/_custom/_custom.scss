@@ -2,3 +2,18 @@
 // Custom style
 // ==============================
 // You can override the variables in _variables.scss to customize the style
+
+.emphasized-title {
+    font-weight: bolder !important;
+}
+
+.custom-footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px dashed #e6e6e6;
+}
+
+.wechat-qrcode {
+    width: 160px; height: 160px;
+}

@@ -11,18 +11,26 @@
     <a class="theme-link" href="https://github.com/ahonn/hexo-theme-even">Even</a>
   </span>
 
+  {%- if theme.busuanzi -%}
+    <span style="display: block;">
+      <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+    </span>
+  {%- endif -%}
+
   <span class="copyright-year">
-    {%- set current = date(Date.now(), "YYYY") -%}
-    &copy;
-    {%- if theme.since and theme.since != current -%}
-      {{ theme.since }} - {{ current }}
-    {%- else -%}
-      {{ current }}
-    {%- endif -%} 
+    <a href="/log" target="_blank">
+      {%- set current = date(Date.now(), "YYYY") -%}
+      &copy;
+      {%- if theme.since and theme.since != current -%}
+        {{ theme.since }} - {{ current }}
+      {%- else -%}
+        {{ current }}
+      {%- endif -%} 
+    </a>
 
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>
-    <span class="author">{{ config.author }}</span>
+    <span class="author"><a href="/about" target="_blank">{{ config.author }}</span>
   </span>
 </div>

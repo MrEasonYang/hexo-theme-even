@@ -4,6 +4,7 @@ menu:
   tags: Tags
   categories: Categories
   about: About
+  links: Links
 
 footer:
   powered: "Powered by %s"

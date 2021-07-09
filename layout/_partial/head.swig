@@ -34,6 +34,9 @@
 {#- Theme styling -#}
 <link rel="stylesheet" type="text/css" href="{{ url_for('css/style.css') }}?v={{ theme.version }}" />
 
+{#- Font Awesome -#}
+<link rel="stylesheet" type="text/css" href="{{ url_for('lib/fontawesome/css/all.min.css') }}">
+
 {#- Analytics and push -#}
 {%- if not env.debug -%}
   {%- include "../_script/analytics.swig" -%}

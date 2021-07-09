@@ -4,6 +4,7 @@ menu:
   tags: 标签
   categories: 分类
   about: 关于
+  links: 友链
 
 footer:
   powered: "由 %s 强力驱动"
