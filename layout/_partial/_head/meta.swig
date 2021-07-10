@@ -37,3 +37,28 @@
   <meta name="google-site-verification" content="{{ theme.google_verification }}" />
 {%- endif -%}
 
+{%- if theme.twitter_card -%}
+  {%- if page.description -%}
+    <meta name="twitter:description" content="{{ page.description }}"/>
+  {%- elif page.title -%}
+    <meta name="twitter:description" content="{{ page.title }}"/>
+  {%- elif config.description -%}
+    <meta name="twitter:description" content="{{ config.description }}"/>
+  {%- endif -%}
+
+  {%- if page.title -%}
+    <meta name="twitter:title" content="{{ page.title }}" />
+  {%- elif config.title -%}
+    <meta name="twitter:title" content="{{ config.title }}" />
+  {%- endif -%}
+
+  {%- if page.permalink -%}
+    <meta name="twitter:url" content="{{ page.permalink }}" />
+  {%- elif config.url -%}
+    <meta name="twitter:url" content="{{ config.url }}" />
+  {%- endif -%}
+
+  <meta name="twitter:card" content="{{ theme.twitter_card.style }}" />
+
+  <meta name="twitter:creator" content="{{ theme.twitter_card.creator }}" />
+{%- endif -%}
