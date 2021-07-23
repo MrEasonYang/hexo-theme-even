@@ -37,6 +37,10 @@
   <meta name="google-site-verification" content="{{ theme.google_verification }}" />
 {%- endif -%}
 
+{%- if theme.sogou_verification -%}
+  <meta name="sogou_site_verification" content="{{ theme.sogou_verification }}" />
+{%- endif -%}
+
 {%- if theme.twitter_card -%}
   {%- if page.description -%}
     <meta name="twitter:description" content="{{ page.description }}"/>
