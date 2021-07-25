@@ -17,6 +17,10 @@
     </span>
   {%- endif -%}
 
+  <span style="display: block;">
+    <a class="sitemap-link" href="https://easonyang.com/sitemap.xml">站点地图</a>
+  </span>
+
   <span class="copyright-year">
     <a href="/log" target="_blank">
       {%- set current = date(Date.now(), "YYYY") -%}
