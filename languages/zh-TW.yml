@@ -9,6 +9,8 @@ menu:
 footer:
   powered: "由 %s 技術提供"
   theme: 主題
+  wordCount: 共計
+  wordCountUnit: 字
 
 posts:
   prev: 上一頁

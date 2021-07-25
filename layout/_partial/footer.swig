@@ -7,13 +7,20 @@
   </span>
   <span class="division">|</span>
   <span class="theme-info">
-    {{ __('footer.theme') }} - 
-    <a class="theme-link" href="https://github.com/ahonn/hexo-theme-even">Even</a>
+    <a class="theme-link" href="https://github.com/ahonn/hexo-theme-even">Even</a> based <a class="theme-link" href="https://github.com/MrEasonYang/hexo-theme-even">EasonEven</a>
   </span>
 
   {%- if theme.busuanzi -%}
     <span style="display: block;">
-      <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+      <span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+      <span class="division">|</span>
+      <span id="busuanzi_container_site_uv">总访问人数<span id="busuanzi_value_site_uv"></span>次</span>
+    </span>
+  {%- endif -%}
+
+  {%- if config.word_count -%}
+    <span style="display: block;">
+      {{ __('footer.wordCount') }} {{ totalcount(site) }} {{ __('footer.wordCountUnit') }}
     </span>
   {%- endif -%}
 

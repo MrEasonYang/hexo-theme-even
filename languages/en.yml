@@ -9,6 +9,8 @@ menu:
 footer:
   powered: "Powered by %s"
   theme: Theme
+  wordCount: Total
+  wordCountUnit: words
 
 posts:
   prev: Prev

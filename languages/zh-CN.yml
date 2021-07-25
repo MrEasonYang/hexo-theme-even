@@ -9,6 +9,8 @@ menu:
 footer:
   powered: "由 %s 强力驱动"
   theme: 主题
+  wordCount: 共计
+  wordCountUnit: 字
 
 posts:
   prev: 上一页
