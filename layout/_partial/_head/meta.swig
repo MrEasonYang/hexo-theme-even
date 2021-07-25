@@ -41,6 +41,10 @@
   <meta name="sogou_site_verification" content="{{ theme.sogou_verification }}" />
 {%- endif -%}
 
+{%- if theme.shenma_verification -%}
+  <meta name="shenma-site-verification" content="{{ theme.shenma_verification }}"/>
+{%- endif -%}
+
 {%- if theme.twitter_card -%}
   {%- if page.description -%}
     <meta name="twitter:description" content="{{ page.description }}"/>
