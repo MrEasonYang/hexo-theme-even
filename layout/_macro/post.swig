@@ -69,6 +69,8 @@
 
       {#- Reward -#}
       {%- include "../_partial/_post/reward.swig" -%}
+
+      {%- include "../_partial/_post/popular-posts.swig" -%}
     {%- endif -%}
 
     {%- if not is_home() -%}

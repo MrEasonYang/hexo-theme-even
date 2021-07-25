@@ -72,3 +72,18 @@
     }
   }
 }
+
+.popular-posts {
+    border-top: 1px dashed #e6e6e6;
+    list-style-type: circle;
+    padding-top: 10px;
+}
+
+.popular-posts-title a {
+  color: #c05b4d;
+}
+
+.popular-posts-title h3 {
+  font-size: 16px;
+  margin: 0;
+}
