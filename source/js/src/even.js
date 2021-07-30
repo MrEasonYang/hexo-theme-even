@@ -203,30 +203,28 @@
     }
 
     function showTime(Counter) {
-      let index = 0;
-      $visits.each(function () {
-        var $this = $(this);
-        setTimeout(
-          function() {
-            var query = new AV.Query(Counter);
-            var url = $this.data('url').trim();
-    
-            query.equalTo('url', url);
-            query.find().then(function (results) {
-              if (results.length === 0) {
-                updateVisits($this, 0);
-              } else {
-                var counter = results[0];
-                updateVisits($this, counter.get('time'));
-              }
-            }, function (error) {
-              // eslint-disable-next-line
-              console.log('Error:' + error.code + ' ' + error.message);
-            });
-          }, 100*(index++));     
-      })
+      var urls = [];
+      $visits.each((index, item) => urls.push($(item).data('url').trim()));
+      var query = new AV.Query(Counter);
+      query.containedIn('url', urls);
+      query.find().then(function (results) {
+        if (results.length === 0) {
+          updateVisits($this, 0);
+          return;
+        }
+        var counterByUrl = {};
+        results.forEach(ret => counterByUrl[ret.get('url')] = ret.get('time'));
+
+        $visits.each((index, item) => {
+          var url = $(item).data('url').trim();
+          updateVisits($(item), counterByUrl[url] || 0);
+        });
+      }, function (error) {
+        // eslint-disable-next-line
+        console.log('Error:' + error.code + ' ' + error.message);
+      });
     }
-  };
+  }
 
   Even.prototype.backToTop = function () {
     var $backToTop = $('#back-to-top');
