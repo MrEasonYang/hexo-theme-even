@@ -87,3 +87,16 @@
   font-size: 16px;
   margin: 0;
 }
+
+.custom-footer {
+    text-align: center;
+    text-align: -webkit-center;
+    text-align: -moz-center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px dashed #e6e6e6;
+}
+
+.wechat-qrcode {
+    width: 160px; height: 160px;
+}
