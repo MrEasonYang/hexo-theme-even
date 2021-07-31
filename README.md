@@ -1,10 +1,20 @@
-# hexo-theme-even
-A super simple theme for Hexo
+# Enhanced hexo-theme-even
+Forked from the origin [repo](https://github.com/ahonn/hexo-theme-even), try to make it much better. And it's all thanks to the theme founder [Yuexun Jiang](https://github.com/ahonn)'s awesome job.
 
-[![GitHub stars](https://img.shields.io/github/stars/ahonn/hexo-theme-even.svg?style=flat-square)](https://github.com/ahonn/hexo-theme-even/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/ahonn/hexo-theme-even.svg?style=flat-square)](https://github.com/ahonn/hexo-theme-even/network)
-[![GitHub issues](https://img.shields.io/github/issues/ahonn/hexo-theme-even.svg?style=flat-square)](https://github.com/ahonn/hexo-theme-even/issues)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/ahonn/hexo-theme-even/master/LICENSE)
+[中文说明](https://easonyang.com/2021/07/06/a-better-hexo-theme-even/)
+
+# Forked repo feature
+- Support Font Awesome icons.
+- Support site analytics provided by busuanzi.
+- Support popular posts.
+- Add option to stop submitint to baidu push.
+- Support custom post footer which is able to contain wechat official account etc.
+- Emphasized index post title.
+- Place copyright information in post to anti web crawler.
+- Request LeanCloud once when loading the counter.
+- Support Twitter card.
+- Support Sogou/Shenma site verifications.
+- Able to add a sitemap link in the footer.
 
 ## Screenshots
 ![even-screenshots](https://ahonn-me.oss-cn-beijing.aliyuncs.com/images/55iw9.png)
