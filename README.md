@@ -15,6 +15,7 @@ Forked from the origin [repo](https://github.com/ahonn/hexo-theme-even), try to 
 - Support Twitter card.
 - Support Sogou/Shenma site verifications.
 - Able to add a sitemap link in the footer.
+- Use h1 tag instead of h2 on index to optimize SEO.
 
 ## Screenshots
 ![even-screenshots](https://ahonn-me.oss-cn-beijing.aliyuncs.com/images/55iw9.png)

@@ -1,13 +1,15 @@
 {%- macro render(post) -%}
   <article class="post">
     <header class="post-header">
-      <h1 class="post-title emphasized-title">
-        {%- if is_home() -%}
-          <a class="post-link" href="{{ url_for(post.path) }}">{{ post.title }}</a>
-        {%- else -%}
-          {{ post.title }}
-        {%- endif -%}
-      </h1>
+      {%- if is_home() -%}
+        <h2 class="post-title emphasized-title">
+            <a class="post-link" href="{{ url_for(post.path) }}">{{ post.title }}</a>
+        </h2>
+      {%- else -%}
+        <h1 class="post-title emphasized-title">
+            {{ post.title }}
+        </h1>
+      {%- endif -%}
 
       <div class="post-meta">
         <span class="post-time">
