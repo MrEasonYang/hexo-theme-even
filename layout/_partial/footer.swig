@@ -24,9 +24,11 @@
     </span>
   {%- endif -%}
 
-  <span style="display: block;">
-    <a class="sitemap-link" href="https://easonyang.com/sitemap.xml">站点地图</a>
-  </span>
+  {%- if theme.footer_sitemap -%}
+    <span style="display: block;">
+      <a class="sitemap-link" href="https://easonyang.com/sitemap.xml">站点地图</a>
+    </span>
+  {%- endif -%}
 
   <span class="copyright-year">
     <a href="/log" target="_blank">

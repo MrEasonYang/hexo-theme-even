@@ -1,4 +1,4 @@
-{%- if theme.baidu_analytics -%}
+{%- if theme.baidu_push -%}
     <script id="baidu_push">
     (function(){
         var bp = document.createElement('script');
