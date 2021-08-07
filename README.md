@@ -106,7 +106,8 @@ baidu_push: true
 ## Installation
 ```bash
 $ npm install hexo-renderer-scss hexo-renderer-swig --save
-$ git clone https://github.com/ahonn/hexo-theme-even themes/even
+$ # For original theme: git clone https://github.com/ahonn/hexo-theme-even themes/even
+$ git clone https://github.com/MrEasonYang/hexo-theme-even.git themes/even
 $ cp themes/even/_config.yml.example themes/even/_config.yml
 ```
 
