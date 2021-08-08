@@ -66,6 +66,10 @@
     <meta name="twitter:url" content="{{ config.url }}" />
   {%- endif -%}
 
+  {%- if theme.twitter_card.image -%}
+    <meta name="twitter:image" content="{{ theme.twitter_card.image }}" />
+  {%- endif -%}
+
   <meta name="twitter:card" content="{{ theme.twitter_card.style }}" />
 
   <meta name="twitter:creator" content="{{ theme.twitter_card.creator }}" />
@@ -93,4 +97,8 @@
   {%- endif -%}
 
   <meta name="og:type" content="{{ theme.open_graph.type }}" />
+
+  {%- if theme.open_graph.image -%}
+    <meta name="og:image" content="{{ theme.open_graph.image }}" />
+  {%- endif -%}
 {%- endif -%}
