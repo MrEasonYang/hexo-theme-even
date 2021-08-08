@@ -24,9 +24,19 @@
     </span>
   {%- endif -%}
 
-  {%- if theme.footer_sitemap -%}
+  {%- if theme.footer_sitemap || theme.friend_link -%}
     <span style="display: block;">
-      <a class="sitemap-link" href="https://easonyang.com/sitemap.xml">站点地图</a>
+  {%- endif -%}
+    {%- if theme.footer_sitemap -%}
+      <a class="footer-link" href="{{ theme.footer_sitemap.url }}">站点地图</a>
+      {%- if theme.friend_link -%}
+          <span class="division">|</span>
+      {%- endif -%}
+    {%- endif -%}
+    {%- if theme.friend_link -%}
+        <a class="footer-link" href="{{ theme.friend_link.url }}">友情链接</a>
+    {%- endif -%}
+  {%- if theme.footer_sitemap || theme.friend_link -%}
     </span>
   {%- endif -%}
 
