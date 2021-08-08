@@ -7,7 +7,7 @@
   </span>
   <span class="division">|</span>
   <span class="theme-info">
-    <a class="theme-link" href="https://github.com/ahonn/hexo-theme-even">Even</a> based <a class="theme-link" href="https://github.com/MrEasonYang/hexo-theme-even">EasonEven</a>
+    <a class="theme-link" href="https://github.com/ahonn/hexo-theme-even">Even</a> based <a class="theme-link" href="https://easonyang.com/2021/08/01/enhanced-hexo-theme-even/">EasonEven</a>
   </span>
 
   {%- if theme.busuanzi -%}
