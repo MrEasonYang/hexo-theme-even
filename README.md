@@ -14,6 +14,7 @@ Forked from the origin [repo](https://github.com/ahonn/hexo-theme-even), try to 
 - Place copyright information inner the post area to anti web crawler.
 - Request LeanCloud only one time when loading the counter.
 - Support Twitter cards.
+- Support the Open Graph Protocal.
 - Support Sogou/Shenma site verifications.
 - Able to add a sitemap link in the footer.
 - Use h2 tag instead of h1 on index to optimize SEO.
@@ -66,6 +67,15 @@ wxOfficialAccount:
 twitter_card:
   style: <See Twitter card docs>
   creator: <Twitter username>
+```
+
+### Add common Open Gragh information
+1. Read [Open Graph docs](https://ogp.me/)
+
+2. Add this to the theme config to enable:
+```yaml
+open_graph:
+  type: <See https://ogp.me/#types>
 ```
 
 ### Word count

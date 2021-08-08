@@ -70,3 +70,27 @@
 
   <meta name="twitter:creator" content="{{ theme.twitter_card.creator }}" />
 {%- endif -%}
+
+{%- if theme.open_graph -%}
+  {%- if page.description -%}
+    <meta name="og:description" content="{{ page.description }}"/>
+  {%- elif page.title -%}
+    <meta name="og:description" content="{{ page.title }}"/>
+  {%- elif config.description -%}
+    <meta name="og:description" content="{{ config.description }}"/>
+  {%- endif -%}
+
+  {%- if page.title -%}
+    <meta name="og:title" content="{{ page.title }}" />
+  {%- elif config.title -%}
+    <meta name="og:title" content="{{ config.title }}" />
+  {%- endif -%}
+
+  {%- if page.permalink -%}
+    <meta name="og:url" content="{{ page.permalink }}" />
+  {%- elif config.url -%}
+    <meta name="og:url" content="{{ config.url }}" />
+  {%- endif -%}
+
+  <meta name="og:type" content="{{ theme.open_graph.type }}" />
+{%- endif -%}
