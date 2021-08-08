@@ -19,12 +19,16 @@
     {%- endif -%}
 
     {%- if config.feed and config.feed.path and theme.rss === 'default' -%}
-      <a href="{{ url_for(config.feed.path) }}" class="iconfont icon-rss" title="rss"></a>
+      <a href="{{ url_for(config.feed.path) }}" class="iconfont" title="rss"><i class="fas fa-rss"></i></a>
     {%- elif theme.rss === 'default' -%}
       {%- set rss_link = config.feed.path || 'atom.xml' -%}
-      <a href="{{ url_for(rss_link) }}" class="iconfont icon-rss" title="rss"></a>
+      <a href="{{ url_for(rss_link) }}" class="iconfont" title="rss"><i class="fas fa-rss"></i></a>
     {%- elif theme.rss -%}
-      <a href="{{ url_for(theme.rss) }}" class="iconfont icon-rss" title="rss"></a>
+      <a href="{{ url_for(theme.rss) }}" class="iconfont" title="rss"><i class="fas fa-rss"></i></a>
+    {%- endif -%}
+
+    {%- if theme.search_link -%}
+      <a href="{{ url_for(theme.search_link) }}" class="iconfont" title="Telegram"><i class="fas fa-search"></i></a>
     {%- endif -%}
   </div>
 {%- endif -%}
