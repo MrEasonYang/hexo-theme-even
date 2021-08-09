@@ -100,3 +100,30 @@
 .wechat-qrcode {
     width: 160px; height: 160px;
 }
+
+.newsletter-submit-button {
+  margin: 15px 0;
+  padding: 3px 7px;
+  display: inline-block;
+  color: $theme-color;
+  border: 1px solid $theme-color;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ffffff;
+
+  &:hover {
+    color: $white;
+    background-color: $theme-color;
+    transition: 0.5s;
+  }
+}
+
+.newsletter-email-field {
+  margin: 15px 0;
+  padding: 3px 7px;
+  display: inline-block;
+  color: $theme-color;
+  border: 1px solid $theme-color;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
