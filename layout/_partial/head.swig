@@ -50,3 +50,41 @@
 <script>
   window.config = {{ JSON.stringify(themeConfig) }};
 </script>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "WebSite",
+            "@id": "{{ config.url }}/#website",
+            "url": "{{ config.url }}",
+            "name": "{{ config.title }}",
+            "description": "{{ config.description }}",
+            "publisher": {
+                "@id": "{{ config.url }}/#person"
+            }
+        },
+        {
+            "@type": "Person",
+            "@id": "{{ config.url }}/#person",
+            "name": "{{ theme.ld_schema.person.name }}",
+            "image": {
+                "@type": "ImageObject",
+                "@id": "{{ config.url }}/#personImage",
+                "url": "{{ theme.ld_schema.person.img_url }}",
+                "width": "{{ theme.ld_schema.person.img_width }}",
+                "height": "{{ theme.ld_schema.person.img_height }}",
+                "caption": "{{ theme.ld_schema.person.name }}"
+            }{%- if theme.ld_schema.person.sameAs -%}, {%- endif -%}
+            {%- if theme.ld_schema.person.sameAs -%}
+            "sameAs": [
+            {%- for i, link in theme.ld_schema.person.sameAs -%}
+              "{{ link }}"{%- if theme.ld_schema.person.sameAs.length - 1 != i -%},{%- endif -%}
+            {%- endfor -%}
+            ]
+            {%- endif -%}
+        }
+    ]
+}
+</script>
