@@ -17,3 +17,30 @@
     text-align: center;
   }
 }
+
+.top-nav {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    text-align: center;
+    text-align: -webkit-center;
+    text-align: -moz-center;
+    margin-top: 10px;
+    border-top: 1px dashed #e6e6e6;
+    border-bottom: 1px dashed #e6e6e6;
+}
+
+.top-nav a {
+  padding: 3px 7px;
+  cursor: pointer;
+  background-color: #ffffff;
+  margin-left: 5px;
+  color: $theme-color;
+  border: 1px solid $theme-color;
+  border-radius: 5px;
+
+  &:hover {
+    color: $white;
+    background-color: $theme-color;
+    transition: 0.5s;
+  }
+}

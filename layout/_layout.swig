@@ -12,6 +12,20 @@
         {%- include '_partial/header.swig' -%}
       </header>
 
+      {%- if theme.top_nav -%}
+        <div class="top-nav">
+          {%- if theme.top_nav.newsletter -%}
+            <a href="{{ theme.revue.home }}" href="_blank">Newsletter</a>
+          {%- endif -%}
+          {%- if theme.top_nav.telegram -%}
+            <a href="{{ theme.telegram }}" href="_blank">电报频道</a>
+          {%- endif -%}
+          {%- if theme.top_nav.wxOfficialAccount -%}
+            <a href="{{ theme.wxOfficialAccount.url }}" href="_blank">微信公众号</a>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+
       <main id="main" class="main">
         <div class="content-wrapper">
           <div id="content" class="content">
