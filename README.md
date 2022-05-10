@@ -18,6 +18,7 @@ Forked from the origin [repo](https://github.com/ahonn/hexo-theme-even), try to 
 - Support Sogou/Shenma site verifications.
 - Able to add a sitemap link in the footer.
 - Use h2 tag instead of h1 on index to optimize SEO.
+- Fixed Leancloud counter, yes, it's working again.
 
 # Usage
 ## Original features
@@ -105,6 +106,17 @@ shenma_verification:
 Forked theme will set Baidu push disabled as default, add this to the theme config to enable it again:
 ```yaml
 baidu_push: true
+```
+
+### Use counter based on Leancloud
+The original implementation uses the old leancloud cdn with deprecated api domain which is 404 currently. This theme upgraded the cdn address so that the counter can work again.
+However, Leancloud required CN apps to use specified domain, so you have to set up the server url manually to make it work.
+```yaml
+# LeanCloud
+leancloud:
+  app_id: <Your Leancloud appId>
+  app_key: <Your Leancloud appKey>
+  server_url: <Your Leancloud domain>
 ```
 
 # Original README
