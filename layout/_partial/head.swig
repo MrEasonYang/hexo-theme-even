@@ -88,3 +88,7 @@
     ]
 }
 </script>
+
+{%- if theme.umami -%}
+  <script async defer data-website-id="{{ theme.umami.id }}" src="{{ theme.umami.js }}"></script>
+{%- endif -%}

@@ -88,6 +88,11 @@ google_analytics:
 # Google Verification
 google_verification:
 
+# Umami Analytics
+umami:
+  id:
+  js:
+
 # Disqus
 disqus_shortname:
 
